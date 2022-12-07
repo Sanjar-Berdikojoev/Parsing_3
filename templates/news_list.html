@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>News List</title>
+</head>
+<body>
+
+<center>
+    {% for i in object_list %}
+
+    <img src="{{i.image}}" alt="" width="300" height="250">
+    <h2><a href="{{i.title}}">Перейти к новости</a></h2>
+    <p>
+        <h2>{{i.title_text}}</h2>
+    </p>
+    <p>
+        <h3>{{i.description}}</h3>
+    </p>
+    <p>
+        <h3>{{i.published_data}}</h3>
+    </p>
+
+
+    {% endfor %}
+</center>
+</body>
+</html>
